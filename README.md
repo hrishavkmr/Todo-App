@@ -23,5 +23,3 @@ To run the app, you need to connect to postgresql database on the backend.the st
 1. create a postgresql database named "btredb" with owner "postgres".
 2. In todo/settings.py, under the DATABASES section, you need to edit the 'PASSWORD'(In the folder, it is 123456, you need to change it to whatever password you set for your btredb database).
 3.run this command ```python manage.py runserver ```
-
-## sample images
