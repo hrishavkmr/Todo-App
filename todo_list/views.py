@@ -28,7 +28,8 @@ def edit(request,pk):
 			form.save()
 			messages.success(request,('Item has been edited'))
 			return redirect('home')
-		
+		else:
+			return redirect('home')	
 	else:
 			item = List.objects.get(pk=pk)
 			return render(request,'edit.html',{'item':item})

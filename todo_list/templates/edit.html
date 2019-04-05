@@ -20,7 +20,7 @@
     </nav>
     {% block content %}
 {% if item %}
-    <form  class="form-inline my-2 my-lg-0" method="POST" action="{% url 'edit' item.id %}">
+    <form  class="form-inline my-2 my-lg-0" method="POST">
         {% csrf_token %}
         <input class="form-control mr-sm-2" type="search" placeholder="{{item.name}}" aria-label="Search" name = 'name'>
         <input type="hidden" value="{{item.done}}" name="done">
